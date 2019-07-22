@@ -1,0 +1,261 @@
+.label-info {
+    background: #629aa9;
+    color: white;
+    width: 100%;
+    text-align: left;
+    line-height: 1;
+    border: 1px solid #629aa9;
+    font-size: 16px;
+    margin-left: -15px;
+}
+
+
+.form-body {
+    padding: 2em 2em;
+}
+
+.widget-shadow {
+    margin-top: -18px;
+}
+
+.d-inline {
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    margin-left: -40px;
+}
+
+.display_view{
+    display: none;
+}
+.row {
+    margin-bottom: 5px;
+
+}
+.row input {
+    margin-left: -40px;
+    font-size: 16px;
+}
+
+.row img {
+    margin-left: -40px;
+    height: 30%;
+    width: 30%;
+}
+.row select {
+    margin-left: -40px;
+    font-size: 16px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-btn {
+    float: right;
+}
+.btn-2 {
+    width: 48%;
+}
+
+#userID{
+    width: 70px;
+}
+#userName {
+    width: 300px;
+}
+#email {
+    width: 300px;
+    border-color: red;
+}
+#phone {
+    width: 120px;
+}
+#birthday {
+    width: 170px;
+}
+
+#passwordInfo {
+    width: 170px;
+    border-color: red;
+}
+#repassword {
+    width: 170px;
+    border-color: red;
+}
+
+#address {
+    width: 350px;
+}
+#gender {
+    width: 100px;
+}
+#avatar {
+    width:250px;height: 250px; margin-left: -40px; text-align: center;position: relative
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .btn-2{
+        max-width: 70px;
+        margin-bottom: 15px;
+        float: right;
+    }
+
+    .btn-back{
+        margin-left: 10px;
+    }
+
+    .label-info {
+        margin-left: -20px;
+        margin-bottom: 3px;
+        max-width: 200px;
+        width: 200px;
+    }
+    .row input {
+        font-size: 13px;
+        margin-left: -20px
+    }
+    .row select {
+        font-size: 13px;
+        margin-left: -20px
+    }
+
+    #avatar {
+        margin-left: -20px;
+        width:200px;height: 200px;
+    }
+    .btn-2 {
+        font-size: 13px;
+        width: 48%;
+    }
+    #userName {
+        width: 200px;
+    }
+    #email {
+        width: 200px;
+    }
+    #address {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .label-info {
+        margin-left: -20px;
+        margin-bottom: 3px;
+        max-width: 160px;
+        width: 160px;
+    }
+
+    .btn-2{
+        max-width: 90px;
+        margin-bottom: 15px;
+        float: right;
+        font-size: 14px;
+    }
+
+    .btn-back{
+        margin-left: 10px;
+    }
+
+    .label-info {
+        margin-left: -20px;
+        margin-bottom: 3px;
+        max-width: 200px;
+        width: 200px;
+    }
+    .row input {
+        font-size: 15px;
+        margin-left: -20px
+    }
+    .row select {
+        font-size: 15px;
+        margin-left: -20px
+    }
+
+    #avatar {
+        margin-left: -20px;
+        width:200px;height: 200px;
+    }
+
+    #userName {
+        width: 200px;
+    }
+    #email {
+        width: 300px;
+    }
+    #address {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .btn-2{
+        max-width: 90px;
+        float: right;
+        font-size: 14px;
+    }
+
+    .btn-back{
+        margin-left: 5px;
+    }
+    .row input {
+        font-size: 16px;
+    }
+    .row select {
+        font-size: 16px;
+    }
+    .btn-2 {
+        font-size: 16px;
+        /*margin-right: -60px;*/
+        margin-bottom: -25px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .row input {
+        font-size: 16px;
+    }
+    .row select {
+        font-size: 16px;
+    }
+    .btn-2 {
+        font-size: 16px;
+    }
+
+}
+
+/*@media only screen and (min-width: 1200px) {*/
+/*.btn-2{*/
+/*max-width: 90px;*/
+/*width: 48%;*/
+/*float: right;*/
+/*font-size: 14px;*/
+/*}*/
+/*!*.label-info {*!*/
+/*!*width: 200px;*!*/
+/*!*max-width: 200px;*!*/
+/*!*}*!*/
+/*.btn-back{*/
+/*margin-left: 5px;*/
+/*}*/
+
+/*!*.row input {*!*/
+/*!*margin-left: -50px;*!*/
+/*!*}*!*/
+/*!*.row select {*!*/
+/*!*margin-left: -120px;*!*/
+/*!*}*!*/
+
+/*!*#avatar {*!*/
+/*!*margin-left: -120px;*!*/
+/*!*}*!*/
+
+/*}*/
+
+
