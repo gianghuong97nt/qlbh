@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Model\Admin\ShopProductModel;
-use App\Model\Admin\ShopCategoryModel;
+use App\Model\Admin\Product;
+use App\Model\Admin\Category;
 use Illuminate\Support\Facades\DB;
 
 class ShopProductController extends Controller
@@ -21,26 +21,26 @@ class ShopProductController extends Controller
 
     public function create(){
         $data = array();
-        $cats = ShopCategoryModel::all();
+        $cats = Category::all();
         $data['cats'] = $cats;
         return view('admin.content.shop.product.submit', $data);
 
     }
 
     public function edit($id){
-        $item = ShopProductModel::find($id);
+        $item = Product::find($id);
 
         $data = array();
         $data['product'] = $item;
         $data['id'] = $id;
-        $cats = ShopCategoryModel::all();
+        $cats = Category::all();
         $data['cats'] = $cats;
         return view('admin.content.shop.product.edit', $data);
 
     }
 
     public function delete($id){
-        $item = ShopProductModel::find($id);
+        $item = Product::find($id);
         $data = array();
         $data['id'] = $id;
         $data['product'] = $item;
@@ -64,7 +64,7 @@ class ShopProductController extends Controller
         ]);
         $input = $request->all();
 
-        $item = new ShopProductModel();
+        $item = new Product();
 
         $item->name     = $input['name'];
         $item->brand    = $input['brand'];
@@ -99,7 +99,7 @@ class ShopProductController extends Controller
         ]);
 
         $input = $request->all();
-        $item = ShopProductModel::find($id);
+        $item = Product::find($id);
 
         $item->name      = $input['name'];
         $item->brand     = $input['brand'];
@@ -118,7 +118,7 @@ class ShopProductController extends Controller
     }
 
     public function destroy($id){
-        $item = ShopProductModel::find($id);
+        $item = Product::find($id);
 
         $item->delete();
 

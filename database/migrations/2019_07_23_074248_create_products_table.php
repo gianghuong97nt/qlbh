@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateShopCategory extends Migration
+class CreateProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,19 @@ class CreateShopCategory extends Migration
      */
     public function up()
     {
-        Schema::create('shop_category', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('slug');
+            $table->string('brand');
+            $table->string('supplier');
             $table->string('images');
-            $table->string('desc');
-            $table->string('intro');
+            $table->integer('quantity');
+            $table->string('color');
+            $table->string('size');
+            $table->integer('priceCore');
+            $table->integer('priceSale');
+            $table->string('note');
+            $table->integer('cat_id');
             $table->timestamps();
         });
     }
@@ -31,6 +37,6 @@ class CreateShopCategory extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shop_category');
+        Schema::dropIfExists('products');
     }
 }

@@ -4,8 +4,8 @@ namespace App\Model\Admin;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ShopProductModel extends Model
+class Product extends Model
 {
     //
-    public $table = 'shop_products';
+    public $table = 'products';
 }
